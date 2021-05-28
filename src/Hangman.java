@@ -13,7 +13,16 @@ public class Hangman {
 	
 	System.out.println("Game starts");
 	
-	System.out.println(Wordlist.randomWord());
+	String Wort = Wordlist.randomWord();
+	
+	int Länge = Wort.length(); 
+	
+	String nothing = "" ;
+	
+	for (int i=0; i<Länge; i++) {
+		nothing += "_ ";
+	}
+	System.out.println (nothing);
 	
 	}
 
